@@ -3,6 +3,7 @@
     <head>
         <title>Accueil Département Informatique EFREI</title>
         <meta charset="UTF-8">
+        <link rel= "stylesheet" href="../css/style.css">
     </head>
     <body>
         <header>
@@ -14,43 +15,81 @@
         <a href="À propos de nous.html">À propos de nous</a>
     </nav></header>
 
-    <section>
+    <section id="accroche">
         <h1>Bienvenue au Département Informatique</h1>
-        <p>Façonnez l'avenir numérique avec l'Efrei.</p> 
+        <h3>Le département d'informatique est le cœur battant de l'EFREI. Il a pour mission de former des ingénieurs experts, capables de concevoir et de piloter les transformations numériques de demain.</h3> 
     </section>
 
     <main>
-        <section id="présentation">
-            <h2>Présentation du Département Informatique :</h2>
-            <p>
-                Le département d’informatique de l’EFREI offre une formation d’excellence 
-                alliant rigueur scientifique et expertise technique. Nous formons des 
-                ingénieurs capables de relever les défis de demain.
-                <br>Le département d'informatique est le cœur battant de l'EFREI. Il a pour mission
-                de former des ingénieurs experts, capables de concevoir et de piloter les transformations
-                numériques de demain.
-            </p>
-        </section>
 
-        <section id="pédagogie">
-            <h3>Pédagogie :</h3>
-            <p>L'enseignement repose sur un équilibre entre fondamentaux théoriques et mise en pratique immédiate :</p>
+        <section id="visuels impactants">
+            <h2>Campus Villejuif :</h2>
+            <section class="carousel-container">
+                <div class="carousel" id="main-carousel">
+                    <div class="slide active">
+                        <img src="C:\Users\kayde\Documents\Projet_Web\image\campus_villejuif.webp" alt="Campus de Villejuif EFREI">
+                        <div class="caption">
+                            <h3>Façonner les experts du numérique de demain</h3>
+                            <p>Découvrez notre campus moderne dédié à l'innovation.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="C:\Users\kayde\Documents\Projet_Web\image\campus.webp" alt="Campus EFREI">
+                        <div class="caption">
+                            <h3>Un environnement d'excellence</h3>
+                            <p>Le cœur battant de l'informatique.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="C:\Users\kayde\Documents\Projet_Web\image\campus_.webp" alt="Campus EFREI">
+                        <div class="caption">
+                            <h2>Un environnement d'excellence</h2>
+                            <p>Le cœur battant de l'informatique.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="C:\Users\kayde\Documents\Projet_Web\image\etudiant.webp" alt="Étudiants en plein projet informatique">
+                        <div class="caption">
+                            <h2>Apprentissage par la pratique</h2>
+                            <p>Des laboratoires à la pointe de la technologie pour vos projets.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </section>
+
+        <section id="chiffres-cles"> 
+            <h3>Chiffres clés du département</h3>
             <ul>
-                <li>Apprentissage par projet : Dès les premières années, les étudiants travaillent sur des cas concrets (développement d'applications, réseaux, sécurité). 
-                <li>Spécialisation progressive : Après un cycle préparatoire généraliste, les étudiants choisissent une majeure de spécialisation pour affiner leur expertise.
-                <li>Lien avec l'entreprise : Le cursus est constamment mis à jour pour répondre aux besoins réels du marché du travail.</li>
+                <li>98% des étudiants sont satisfaits.</li> 
+                <li>Il comporte plus de 50 partenaires d'entreprise.</li>
             </ul>
         </section>
+       
+        <section id="Ateliers et evenement">
+            <h2>Ateliers et événements à venir :</h2>
+            
+            <section id="actualités des événements">
+                <h3>Actualités et Événements à venir</h3>
+                <p>Le département d'informatique est un pôle d'activité constant, organisant tout au long de l'année des moments d'échange entre les étudiants, les enseignants et les professionnels du secteur numérique.</p>
+            </section>
 
-        <section id="domaines">
-            <h3>Les Domaines d'Expertise :</h3>
-            <p>Le département couvre l'ensemble du spectre numérique à travers ses majeurs :</p>
-            <ul>
-        <li>Cybersécurité : Protection des données et lutte contre les cyberattaques.</li>
-        <li>Intelligence Artificielle & Data : Analyse de données massives et algorithmes prédictifs.</li>
-        <li>Software Engineering : Architecture logicielle et développement Full-Stack.</li>
-        <li>Systèmes Embarqués : Informatique pour l'aéronautique, l'automobile et l'IoT.</li>
-    </ul>
+            <section id="portes ouvertes">
+                <h3>Journées portes ouvertes :</h3>
+                <p>Venez découvrir nos infrastructures modernes et échanger avec nos étudiants actuels sur leur quotidien au sein du campus de Villejuif. C'est l'occasion idéale pour poser vos questions sur nos processus d'admission et la vie étudiante.</p>
+                <a href="#" class="lien-rapide">Consulter les dates des JPO</a>
+            </section>
+
+            <section id="les conférences et ateliers">
+                <h3>Les conférences et les ateliers technologiques :</h3>
+                <p>Nous accueillons régulièrement des experts du numérique pour des cycles de conférences portant sur les thématiques de recherche du département, telles que l'Intelligence Artificielle et la Cyberdéfense. Ces ateliers permettent une immersion pratique dans les enjeux technologiques de demain.</p>
+                <a href="#" class="lien-rapide">Les conférences et les ateliers technologiques</a>
+            </section>
         </section>
 
     </main>
@@ -59,5 +98,6 @@
         <p><h4>&copy; 2026 Efrei - Projet Département Informatique.</h4></p>
     </footer>
 
+    <script src="../script.js"></script>
     </body>
 </html>

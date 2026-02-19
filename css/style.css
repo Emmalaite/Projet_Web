@@ -1,0 +1,207 @@
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #004a99;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bleu-efrei: #004a99;
+    --rouge-efrei: #ff0000;
+    --blanc: #ffffff;
+    --gris-fonce: #333333;
+    --ombre: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+header {
+    background-color: var(--blanc);
+    padding: 1rem 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header img {
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--bleu-efrei); 
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--rouge-efrei);
+    transform: translateY(-2px);
+}
+
+#accroche {
+    background: linear-gradient(rgba(0, 74, 153, 0.7), rgba(0, 74, 153, 0.7)), 
+                url('../image/campus.webp') no-repeat center/cover;
+    color: white;
+    text-align: center;
+    padding: 6rem 10%;
+}
+
+#accroche h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 3rem auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: var(--ombre);
+}
+
+.carousel {
+    display: flex !important;
+    transition: transform 0.6s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.slide {
+    min-width: 100%;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+    width: 100%;
+    padding: 40px 20px 20px;
+    text-align: center;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    color: var(--bleu-efrei);
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.prev:hover, .next:hover {
+    background: var(--blanc);
+    color: var(--rouge-efrei);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+main {
+    padding: 2rem 10%;
+}
+
+h2 {
+    color: var(--bleu-efrei);
+    border-left: 6px solid var(--rouge-efrei);
+    padding-left: 15px;
+    margin: 3rem 0 1.5rem;
+    font-size: 1.8rem;
+}
+
+#chiffres-cles {
+    background-color: var(--bleu-efrei);
+    color: white;
+    padding: 3rem;
+    border-radius: 15px;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+#chiffres-cles ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#chiffres-cles li {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 15px;
+}
+
+#actualites-evenements, #portes-ouvertes, #conferences-ateliers {
+    background: #f9f9f9;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+
+.lien-rapide {
+    display: inline-block;
+    margin-top: 15px;
+    color: white;
+    background-color: var(--rouge-efrei);
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.lien-rapide:hover {
+    background-color: #cc0000;
+}
+
+footer {
+    background-color: var(--gris-fonce);
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+    nav { gap: 10px; }
+    #accroche h1 { font-size: 1.8rem; }
+    .slide img { height: 350px; }
+    #chiffres-cles ul { flex-direction: column; }
+    .prev, .next { width: 40px; height: 40px; font-size: 1.2rem; }
+}
