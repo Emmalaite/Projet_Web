@@ -6,6 +6,7 @@
         <link rel= "stylesheet" href="../css/styles.css">
     </head>
     <body>
+
         <header>
             <nav>    
             <a href="Acceuil.html">Acceuil</a>
@@ -13,15 +14,33 @@
             <a href="Équipe enseignante.html">Équipe enseignante</a>
         </nav>
         </header>
-        <Section>
-            <h1>À propos de nous</h1>
-            <h2>Qui sommes-nous ?</h2>
-            <p>Nous sommes ...</p>
-            <h2>Notre formation :</h2>
-            <p>Nous sommes en première année de Bachelor en Cybersécurité et Ethical Hacking</p>
-        </Section>
 
-           <footer>
+        <main>
+
+            <section id="contact">
+                <h2>Nous Contacter</h2>
+                <form id="contactForm"> <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="submit">Envoyer</button>
+                </form>
+                <p>Adresse : Campus de Villejuif Paris.</p>
+            </section>
+            <hr>
+            <section id="a-propos"> <h2>À propos du projet</h2>
+                <p>Ce site a été réalisé par :</p>
+                <ul>
+                    <li><strong>Océane :</strong> Développement HTML/CSS.</li>
+                    <li><strong>Emma :</strong> Développement en HTML/CSS.</li>
+                    <li><strong>Ilhem :</strong> Développement en Javascript.</li>
+                </ul>
+                <p>Travail réalisé dans le cadre d'un projet.</p>
+            </section>
+            
+        </main>
+
+    <footer>
         <p><h4>&copy; 2026 Efrei - Projet Département Informatique.</h4></p>
     </footer>
     
