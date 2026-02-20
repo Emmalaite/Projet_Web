@@ -1,25 +1,67 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Équipe Enseignante - Département Informatique</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <a href="index.html">
-            <img src="image/Efrei.webp" alt="Logo Efrei" id="logo-efrei">
-        </a>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="formations.html">Cours et formations</a>
-            <a href="equipe.html">Équipe enseignante</a>
-            <a href="contact.html">À propos de nous</a>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <title>Équipe Enseignante - Département Informatique</title>
+<link rel= "stylesheet" href="C:\Users\emmag\Documents\Efrei cours\2ème semestre\web 1, dybamique\Projet_Web\css\style.css">    </head>
+    <body>
+        <header>
+            <a href="Équipe enseignante.html">
+                <img src="image/Efrei.webp" alt="Logo Efrei" id="logo-efrei">
+            </a>
+            <nav>
+                <a href="Acceuil.html">Acceuil</a>
+                <a href="Cours et formations.html">Cours et formations</a>
+                <a href="À propos de nous.html">À propos de nous</a>
+            </nav>
+        </header>
+    <main id="organisation-equipe">
+        <div class="filter">
+        <button onclick="filtrerPole('tous')">Tous</button>
+        <button onclick="filtrerPole('Cyber')">Pôle Cyber</button>
+        <button onclick="filtrerPole('Dev')">Pôle Développement</button>
+    </div>
+        <table>
+             <caption>Équipe enseignante  </caption>
+            <thead>
+                <tr>
+                    <th>nom</th>
+                    <th>département</th>
+                    <th>Pôle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-pole="Dev",>
+                    <td>M. HAMIDI</td>
+                    <td>Web</td>
+                    <td>Dev</td>                
+                </tr>
 
-    <main>
- 
+                <tr data-pole="Dev">
+                    <td>L. CHIBOUT KHELIFA</td>
+                    <td>Virtualisation</td>
+                    <td>Dev</td>                
+                </tr>
+
+                <tr data-pole="cyber">
+                    <td>M. TIKAT</td>
+                    <td>Administration système</td>
+                    <td>cyber</td>
+                    
+                <tr data-pole="cyber">
+                    <td>S. CHENDEB</td>
+                    <td>Gestion de version</td>
+                    <td>cyber</td>                
+                </tr>
+                
+                <tr data-pole="Dev">
+                    <td>S. CHENDEB</td>
+                    <td>struct donnée avancée</td>
+                    <td>cyber</td>                
+                </tr>
+            </tbody>
+        </table>
+        
     </main>
 
     <footer>
