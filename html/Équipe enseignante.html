@@ -7,7 +7,7 @@
     <body>
         <header>
             <a href="Équipe enseignante.html">
-                <img src="image/Efrei.webp" alt="Logo Efrei" id="logo-efrei">
+                <img src="C:\Users\kayde\Documents\Projet_Web\image\Efrei.webp" alt="Logo Efrei" id="logo-efrei">
             </a>
             <nav>
                 <a href="Acceuil.html">Acceuil</a>
@@ -15,50 +15,162 @@
                 <a href="À propos de nous.html">À propos de nous</a>
             </nav>
         </header>
+
     <main id="organisation-equipe">
-        <div class="filter">
-        <button onclick="filtrerPole('tous')">Tous</button>
-        <button onclick="filtrerPole('Cyber')">Pôle Cyber</button>
-        <button onclick="filtrerPole('Dev')">Pôle Développement</button>
-    </div>
+
+        <section>
+        <h2>Notre Équipe et Recherche</h2>
+            <p>Le département s'appuie sur des experts reconnus et des thématiques de recherche de pointe.</p>
+            <ul>
+                <li><strong>Domaines d'expertise :</strong> Intelligence Artificielle, Cloud Computing, Cyberdéfense, Big Data.</li>
+            </ul>
+        </section>
+
         <table>
-             <caption>Équipe enseignante  </caption>
+             <caption>Équipe enseignants et intervenants</caption>
             <thead>
                 <tr>
+                    <th>Photo</th>
                     <th>nom</th>
                     <th>département</th>
-                    <th>Pôle</th>
+                    <th>Description</th>
                 </tr>
             </thead>
             <tbody>
-                <tr data-pole="Dev",>
-                    <td>M. HAMIDI</td>
+
+                <tr data-pole="Dev">
+                    <td><img src="C:\Users\kayde\Documents\Projet_Web\image\web.png" alt="R. BADRA" width="50"></td>
+                    <td>R. BADRA</td>
                     <td>Web</td>
-                    <td>Dev</td>                
+                    <td>Le cours de développement web a pour rôle de t'enseigner les techniques et langages nécessaires pour concevoir, structurer et rendre fonctionnelles des interfaces numériques accessibles via un navigateur.</td>                
                 </tr>
 
                 <tr data-pole="Dev">
+                    <td><img src="C:\Users\kayde\Documents\Projet_Web\image\virtualisation.png" alt="L. CHIBOUT KHELIFA" width="50"></td>
                     <td>L. CHIBOUT KHELIFA</td>
                     <td>Virtualisation</td>
-                    <td>Dev</td>                
+                    <td>Le cours de virtualisation a pour rôle de t'enseigner comment abstraire les ressources matérielles d'un ordinateur pour créer plusieurs environnements d'exécution isolés et indépendants sur une même machine physique.</td>                
                 </tr>
 
                 <tr data-pole="cyber">
+                    <td><img src="C:\Users\kayde\Documents\Projet_Web\image\systeme.png" alt="M. TIKAT" width="50"></td>
                     <td>M. TIKAT</td>
                     <td>Administration système</td>
-                    <td>cyber</td>
+                    <td>Le cours d'administration système a pour rôle de t'enseigner comment installer, configurer, sécuriser et maintenir l'infrastructure logicielle d'un parc informatique pour garantir la disponibilité et la performance des services aux utilisateurs.</td>
+                </tr>
                     
                 <tr data-pole="cyber">
+                    <td><img src="C:\Users\kayde\Documents\Projet_Web\image\algo.png" alt="S. CHENDEB" width="50"></td>
                     <td>S. CHENDEB</td>
                     <td>Gestion de version</td>
-                    <td>cyber</td>                
+                    <td>Le cours de gestion de version a pour rôle de t'enseigner l'utilisation d'outils (comme Git) pour suivre l'historique des modifications d'un code source, faciliter le travail collaboratif sans conflits et permettre le retour à des versions antérieures en cas d'erreur.</td>                
                 </tr>
                 
                 <tr data-pole="Dev">
+                    <td><img src="C:\Users\kayde\Documents\Projet_Web\image\algo.png" alt="S. CHENDEB" width="50"></td>
                     <td>S. CHENDEB</td>
-                    <td>struct donnée avancée</td>
-                    <td>cyber</td>                
+                    <td>Structure donnée avancée</td>
+                    <td>Le cours de structures de données a pour rôle de t'enseigner comment organiser et stocker les informations de manière optimale en mémoire pour que les algorithmes puissent les manipuler, les rechercher et les trier avec la plus grande efficacité possible.</td>                
                 </tr>
+
+                <tr data-pole="cyber">
+                    <td><img src="C:\Users\kayde\Documents\Projet_Web\image\numeration.png" alt="B. MEZIANI" width="50"></td>
+                    <td>B. MEZIANI</td>
+                    <td>Numération</td>
+                    <td>Le cours de numération a pour rôle de t'enseigner les bases mathématiques et les systèmes de numération utilisés dans l'informatique, notamment les systèmes binaire, octal et hexadécimal.</td>
+                </tr>
+
+                <tr data-pole="cyber">
+                    <td><img src="C:\Users\kayde\Documents\Projet_Web\image\algo.png" alt="S. CHENDEB" width="50"></td>
+                    <td>S. CHENDEB</td>
+                    <td>Algorithmie & Elements de Programmation 1</td>
+                    <td>Le cours d'Algorithmie & Éléments de Programmation 1 a pour rôle de t'enseigner la logique de résolution de problèmes par étapes (l'algorithme) et sa traduction dans un langage informatique pour transformer une idée brute en un programme fonctionnel et structuré.</td>
+                </tr>
+
+                <tr data-pole="cyber">
+                    <td><img src="C:\Users\kayde\Documents\Projet_Web\image\architecture.png" alt="Y. GUIFO FODJO" width="50"></td>
+                    <td>Y. GUIFO FODJO</td>
+                    <td>Architecture des ordinateurs</td>
+                    <td>Le cours d'Architecture des ordinateurs a pour rôle de t'enseigner le fonctionnement interne des composants matériels (processeur, mémoire, bus) et la manière dont ils s'articulent pour exécuter les instructions logicielles au niveau le plus fondamental.</td>
+                </tr>
+
+                <tr data-pole="cyber">
+                    <td><img src="C:\Users\kayde\Documents\Projet_Web\image\gestion_de_projet.png" alt="N. JEGOU" width="50"></td>
+                    <td>N. JEGOU</td>
+                    <td>Gestion de Projet</td>
+                    <td>Le cours de Gestion de Projet a pour rôle de t'enseigner les méthodologies et outils nécessaires pour planifier, organiser, coordonner et livrer un produit complexe dans le respect des contraintes de temps, de budget et de qualité.</td>
+                </tr>
+
+                <tr data-pole="cyber">
+                    <td><img src="C:\Users\kayde\Documents\Projet_Web\image\droit.png" alt="J-P. BRESSON" width="50"></td>
+                    <td>J-P. BRESSON</td>
+                    <td>Droit</td>
+                    <td>Le cours de Droit a pour rôle de t'enseigner le cadre légal, les règles éthiques et les obligations contractuelles qui régissent le monde du numérique, afin de te protéger et de protéger ton entreprise contre les risques juridiques.</td>
+                </tr>
+
+                <tr data-pole="cyber">
+                    <td><img src="C:\Users\kayde\Documents\Projet_Web\image\numeration.png" alt="B. MEZIANI" width="50"></td>
+                    <td>B. MEZIANI</td>
+                    <td>Logique - Théorie des ensembles et applications</td>
+                    <td>Le cours de Logique - Théorie des ensembles et applications a pour rôle de t'enseigner les fondements mathématiques du raisonnement formel et de la manipulation des structures de données abstraites, afin de poser les bases de la rigueur algorithmique et de la conception de systèmes complexes.</td>
+                </tr>
+
+                <tr data-pole="cyber">
+                    <td><img src="C:\Users\kayde\Documents\Projet_Web\image\os.png" alt="B. ROUTIER" width="50"></td>
+                    <td>B. ROUTIER</td>
+                    <td>Initiation aux systèmes d'exploitation</td>
+                    <td>Le cours d'Initiation aux systèmes d'exploitation a pour rôle de t'enseigner comment le logiciel système (le noyau ou kernel) fait le pont entre les applications de l'utilisateur et le matériel physique, en gérant de manière équitable les ressources (CPU, mémoire, fichiers).</td>
+                </tr>
+
+                <tr data-pole="cyber">
+                    <td><img src="C:\Users\kayde\Documents\Projet_Web\image\fonda.png" alt="J. LUSSIEZ" width="50"></td>
+                    <td>J. LUSSIEZ</td>
+                    <td>Fondamentaux Professionnels 1</td>
+                    <td>Le cours de Fondamentaux Professionnels 1 a pour rôle de t'enseigner les codes de l'entreprise, les techniques de communication et les outils de connaissance de soi nécessaires pour construire ton projet de carrière et réussir ton intégration dans le monde du travail.</td>
+                </tr>
+
+                <tr data-pole="cyber">
+                    <td><img src="C:\Users\kayde\Documents\Projet_Web\image\com.png" alt="J-F-M. RICHARD" width="50"></td>
+                    <td>J-F-M. RICHARD</td>
+                    <td>Communication verbale et non verbale</td>
+                    <td>Le cours de Communication verbale et non verbale a pour rôle de t'enseigner comment maîtriser ton langage, ta posture, ta gestuelle et tes expressions pour rendre ton message percutant, crédible et aligné avec tes intentions lors de tes présentations et échanges professionnels.</td>
+                </tr>
+
+                <tr data-pole="cyber">
+                    <td><img src="C:\Users\kayde\Documents\Projet_Web\image\anglais.png" alt="C. DIAS" width="50"></td>
+                    <td>C. DIAS</td>
+                    <td>Technology and Society</td>
+                    <td>Le cours de Technology and Society a pour rôle de t'enseigner à analyser les interactions complexes entre les innovations technologiques et les structures sociales, politiques et éthiques, afin que tu puisses anticiper l'impact réel de ton travail d'ingénieur sur le monde qui t'entoure en anglais.</td>
+                </tr>
+
+                <tr data-pole="cyber">
+                    <td><img src="C:\Users\kayde\Documents\Projet_Web\image\fondamentaux.png" alt="A. MOUSSAIDE" width="50"></td>
+                    <td>A. MOUSSAIDE</td>
+                    <td>Accompagnement Entreprise</td>
+                    <td>Le cours d'Accompagnement Entreprise a pour rôle de t'enseigner les méthodologies et les postures nécessaires pour collaborer efficacement avec des clients ou des partenaires, en transformant des besoins métier parfois flous en solutions techniques concrètes et génératrices de valeur et apprendre a faire un CV et une lettre de motivation.</td>
+                </tr>
+
+                <tr data-pole="cyber">
+                    <td><img src="C:\Users\kayde\Documents\Projet_Web\image\base.png" alt="I. BEN LTAIFA" width="50"></td>
+                    <td>I. BEN LTAIFA</td>
+                    <td>Base de données 1 : Concepts de base</td>
+                    <td>Le cours de Bases de données 1 : Concepts de base a pour rôle de t'enseigner comment organiser, stocker, manipuler et sécuriser des données de manière persistante et cohérente pour qu'elles puissent être exploitées efficacement par des applications informatiques.</td>
+                </tr>
+
+                <tr data-pole="cyber">
+                    <td><img src="C:\Users\kayde\Documents\Projet_Web\image\reseau.png" alt="K. JIOKENG" width="50"></td>
+                    <td>K. JIOKENG</td>
+                    <td>Réseaux 1 : Les fondamentaux</td>
+                    <td>Le cours de Réseaux 1 : Les fondamentaux a pour rôle de t'enseigner les principes de la communication entre machines et les protocoles qui permettent aux données de circuler de manière fiable et sécurisée à travers les infrastructures locales et mondiales (Internet).</td>
+                </tr>
+
+                <tr data-pole="cyber">
+                    <td><img src="C:\Users\kayde\Documents\Projet_Web\image\ccna.png" alt="M. MEZUI" width="50"></td>
+                    <td>M. MEZUI</td>
+                    <td>CCNA 1</td>
+                    <td>Le cours CCNA 1 (Introduction to Networks) est le socle de la certification officielle de Cisco. Son rôle est de t'enseigner les fondements théoriques et pratiques du fonctionnement des réseaux locaux (LAN) et étendus (WAN), avec une approche extrêmement rigoureuse et standardisée.</td>
+                </tr>
+
             </tbody>
         </table>
         
